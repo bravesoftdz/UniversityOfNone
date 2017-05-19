@@ -11,3 +11,9 @@ As this is a work in progress, it will take time for me to scour through hundred
 Make some program to automate this. Convert wiki and website articles to pdf/txt/static html files.
 
 Possibly also make a science university of none project (not computing science but physics, biology, evolution, etc.)
+
+# Rant:
+Interesting GPL/BSD question: why should I release any of this, without payment? Normally people write a book, or charge for courses... if source code is free, why is education costing $20,000 per year, or five years, or whatever it costs? This will have to be considered. Education can be easily copied/replicated, so why is it different than software? I really don't know why.
+
+Interesting projects similar to this:
+* MIT Open Courseware (thanks Walter Lewin)
