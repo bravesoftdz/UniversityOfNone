@@ -17,3 +17,6 @@ Interesting GPL/BSD question: why should I release any of this, without payment?
 
 Interesting projects similar to this:
 * MIT Open Courseware (thanks Walter Lewin)
+* Creative Commons
+* GNU FDL (free documentation license). But unfortunately it's a (religious) cult and a rambly/verbose nonsensical license
+* hardware documentation. Thanks for all companies documenting (and educating people about) their hardware
