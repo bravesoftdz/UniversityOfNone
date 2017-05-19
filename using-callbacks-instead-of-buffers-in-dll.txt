@@ -1,0 +1,95 @@
+Welcome to a Computing Science article from The University of None.
+
+In a DLL (or unix DSO), normally if one needs to send data into a result string, you use a buffer and make sure that the caller has allocated memory for a buffer.
+
+This can be obnoxious because you have to make sure the length of the buffer is large enough.
+
+Is an alternative cheat, to make this much easier, to just use a callback?
+
+In many languages converting a pointer to a char to a string is done automatically if you assign the string to the pointer to char... So with a callback:
+
+type
+  TCallbackPchar = procedure(p: pchar);
+
+procedure SomeFunc(callback: TCallbackPchar);
+var s: string;
+begin
+  s := 'some data';
+  s := s + ' and more';
+  callback(s);
+end;
+
+exports 
+  SomeFunc;
+
+That sends string data into the exe (or unix elf) calling program, without you having to check the buffer.. 
+
+Compare that to this ugly mess:
+
+// return a buf as a result
+// the caller can call this with an empty buffer to check length first
+// returns false if length not enough
+procedure SomeFunc(buf: pchar; len: integer): boolean;
+var s: string;
+begin
+  s := 'some data';
+  s := s + ' and more';
+  // make sure buf is allocated by caller
+  if len < length(s) then begin 
+    buf := '';
+    result := false;
+    exit;
+  end;
+  // and then you have to obnoxiously copy the data from s to buf
+  buf := copy(s, ...more,ugly,params..) //using ugly code
+end;
+
+exports 
+  SomeFunc;
+
+Above ends up being a nightmare because of the length checks, copying, and other obnoxious annoyances. So are callbacks the way to send string data? The compiler often does a lot of work for you if you send a string as a callback parameter. Buffers as parameters on the other hand, used by many DLL's, require obnoxious length checks and memory allocation headaches..
+
+With a callback, the exe (or unix elf) code just does this:
+procedure GetString(p: pchar): string;
+begin
+  result := p;
+end;
+
+procedure SomeCode;
+begin
+  // call DLL function
+  SomeFunc(@GetString);
+end;
+
+Instead of this ugly mess in the calling code:
+
+function GetString: string;
+var 
+  buf: pchar;
+  LengthCheck: boolean;
+const 
+  SizeOfBuf = 100;
+begin
+  // check length first to confirm buffer is big enough
+  LengthOk := SomeFunc(nil, SizeOfBuf);
+  if LengthOk then begin
+    MemAlloc(buf....SizeOfBuf, More, Params) // ugly mess
+    // the DLL will fill the buffer with data, confusing as user doesn't know 
+    // it's dangerous. Call dll function below
+    SomeFunc(buf);
+  end else begin
+    // failed
+    // error code here
+  end;
+  // make sure the result of the function receives
+  // a copy of the buf, otherwise dangerous pointer problem
+  result := copy(buf, ...more, ugly, params..)
+  // free pchar memory here.. more ugly mess..
+  FreeMem(buf, more, ugly, params...);
+end;
+
+Does a callback magically solve the problem, allowing your compiler to do most of the work for you (copying pchars to strings)?
+
+There is really no way for a compiler to magically create a buffer the right size for you, but a callback seems to do the magic.
+
+I will come back to this article after I have tried this technique, as it seems good to be true, but hopefully not "too".. GTBT.
