@@ -1,0 +1,17 @@
+Welcome to another Computing Science article from University of None.
+
+In certain languages such as fpc and delphi, a component or object can have an "owner" which means the object will be freed by its owner when the owner is freed or disposed of. This acts as sort of a garbage collection system..
+
+But is it possible to create different garbage collection mechanisms just with an owner object? i.e. "plugin" a garbage collector by having an owner that behaves differently. Instead of the owner juts freeing the object at the end of the owner's lifetime, instead a plugin garbage collector (as owner) would use a custom garbage collection mechanism.
+
+This may be a bad idea, or an interesting idea that might or might not work. More research would need to be done on it.
+
+Owner, as it is, in Delphi/freepascal, already is a sort of garbage collector but not really. So the question is could one change owner behavior to do different types of garbage collection instead of the simple "Free when owner is freed" mechanism it defaults to.
+
+The issue of course is that garbage collectors need to have all kinds of information about the program (its objects) in order to free objects correctly (bookkeeping), so it is easier said than done.
+
+The interesting feature of this owner as a garbage collector mechanism, is that the language could still retain non-garbage collected types for real time programming or programming where the memory should be managed manually, for speed, or fine control... Then, most of the time the programmers using the language would just default to a garbage collector that does everything for them, but when he really wants to escape the automatic, possibly slow, garbage collector, he can do so.
+
+Again, this needs to be researched further and could be a bad idea or may not work. However it is an interesting way to plug in a garbage collector into a programming language... You create the object with a owner that is the garbage collector, and if no owner is specified or MANUAL memory management is specified, no garbage collection is done.
+
+The key issue that needs looking into, is can an owner detect properly when objects it owns need to be freed? and how? and when? How will an owner or a plugin garbage collector obtain correct information about points in the program where objects need to be freed, and should not be freed?
