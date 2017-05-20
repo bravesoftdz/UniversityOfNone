@@ -50,9 +50,11 @@ exports
 Above ends up being a nightmare because of the length checks, copying, and other obnoxious annoyances. So are callbacks the way to send string data? The compiler often does a lot of work for you if you send a string as a callback parameter. Buffers as parameters on the other hand, used by many DLL's, require obnoxious length checks and memory allocation headaches..
 
 With a callback, the exe (or unix elf) code just does this:
-procedure GetString(p: pchar): string;
+var s: string;
+
+procedure GetString(p: pchar);
 begin
-  result := p;
+  s := p;
 end;
 
 procedure SomeCode;
@@ -73,7 +75,7 @@ begin
   // check length first to confirm buffer is big enough
   LengthOk := SomeFunc(nil, SizeOfBuf);
   if LengthOk then begin
-    MemAlloc(buf....SizeOfBuf, More, Params) // ugly mess
+    MemAlloc(buf....SizeOfBuf, More, Params) // ugly shit
     // the DLL will fill the buffer with data, confusing as user doesn't know 
     // it's dangerous. Call dll function below
     SomeFunc(buf);
@@ -84,12 +86,14 @@ begin
   // make sure the result of the function receives
   // a copy of the buf, otherwise dangerous pointer problem
   result := copy(buf, ...more, ugly, params..)
-  // free pchar memory here.. more ugly mess..
+  // free pchar memory here.. more ugly shit..
   FreeMem(buf, more, ugly, params...);
 end;
 
 Does a callback magically solve the problem, allowing your compiler to do most of the work for you (copying pchars to strings)?
 
-There is really no way for a compiler to magically create a buffer the right size for you, but a callback seems to do the magic.
+Problems: callbacks are local functions, how to get the data out of the function without using a global variable? Passing a user pointer as part of the callback could help, but can bring up issues with managed types.
+
+There is really no way for a compiler to magically create a buffer the right size for you, but a callback seems to do the magic to some extent.
 
 I will come back to this article after I have tried this technique, as it seems good to be true, but hopefully not "too".. GTBT.
