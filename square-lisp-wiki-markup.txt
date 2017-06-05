@@ -1,0 +1,41 @@
+Open Copyright, 2017, Lars Olson. You may modify, extend, or copy this article provided that you note you are not the original author but note you extended it and add your name to the copyright.
+
+==Article==
+This is a suggestion (that I will also likely implement myself) about a markup for a wiki (does not have to be wiki, could be blog, forum, or other) that offers a quick but extensible markup, similar to a Lisp language but instead uses square brackets.
+
+    This is an article with some [b bold text] and also [i itallic text] with 
+    a [url http://somesite.com web link] too.
+
+    This is some [b bold and [i itallic] text] in a nest, so that the word 
+    itallic is both bold and itallic
+
+For source code, one would have to escape or ignore the square brackets, as source code often contains square brackets for arrays/slices.
+
+Theory of parser: if it comes across a url, it consumes the first two items in the list, the second being the actual url to a website, then the rest of the items are the text label that is clickable.
+
+If the parser comes across a "b" inside a square bracket, it consumes the rest of the items and that text will be shown bold. Same for itallic.
+
+The syntax could be extended with a config file to make:
+
+    [custom some text]
+
+Where custom defines some html property. I.e. to make text big, a config file could specify "big" as a new custom markup allowed:
+
+    [big some text here] and maybe [small some text here] and this is 
+    regular text here.
+
+It would also allow code to be executed, if neccessary, or calculated. I.e. [+ 1 2 6] will add the numbers 1, 2, and 6 and output the result.
+
+There is also the oppurtunity to do the Lisp Wiki syntax the other way around, such as [some text b] where some text is bold, with the operater b being for bold, and [some text i] where some text is itallic, with i as the itallic operator, and [1 2 6 +] to add the numbers 1, 2, and 6.
+
+A back quote or a quote could be used to specify the start of a string, but maybe it is not even necessary for a wiki. As a programming language instead of just a wiki syntax, it would indeed require more detail.
+
+Square brackets are used for ease of typing, since no shift key required, but round brackets could be used too.
+
+The key efficiency and beauty of this parser is that the first item in the list (or last, in postfix) is really all that is required to then markup the rest of the items.. And in some cases the first two items are needed, in the case of a url. A config file could specify if the first one, two, or three, or even more items are required, then the rest of the items are all consumed until the closing bracket.
+
+It is likely easier on the eyes than ugly xml or html, and is quicker to type. It is less verbose than bbcode markup, but I do like bbcode since square brackets seem aesthetically more pleasant and easier to type without a shift key on standard english keyboard, compared to XML.
+
+https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBFwYwGqcjlvPPlrz-pq_noKk66ajtjmmbPdLQmJeMEKKqv5AFXg
+
+There must be some disadvantages to square lisp markup idea, which I would have to think about, or try the parser out and see.
