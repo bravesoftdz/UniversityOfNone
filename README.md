@@ -7,6 +7,9 @@ Formats of computing science articles: plain text, PDF, html.
 
 As this is a work in progress, it will take time for me to scour through hundreds of articles and publish them here.
 
+# Copyright of Articles
+A simple Open Copyright. You may modify, extend, or copy this article provided that you note you are not the original author but note you extended it and add your name to the copyright.
+
 # To do
 Make some program to automate this. Convert wiki and website articles to pdf/txt/static html files.
 
