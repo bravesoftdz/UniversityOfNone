@@ -1,7 +1,7 @@
 # UniversityOfNone
 Computing science articles from University of None (not affiliated with any University).
 
-It's time to convert some of my computing science articles from old wikis, websites, and mailing list posts over to simple articles that anyone can read that will not be just stored on personal websites, wikis, etc., but on a github central location.
+It's time to convert some of my computing science articles from old wikis, websites, and mailing list posts over to simple articles that anyone can read that will not be just stored on personal websites, wikis, etc., but on a github central location. As this is github, the articles indeed will contain source code embedded in them as part of the article.  Some articles may not contain source code but descriptions of source code models to implement. Most will contain source code andéor math.
 
 Formats of computing science articles: plain text, PDF, html.
 
@@ -18,5 +18,5 @@ Interesting GPL/BSD question: why should I release any of this, without payment?
 Interesting projects similar to this:
 * MIT Open Courseware (thanks Walter Lewin)
 * Creative Commons
-* GNU FDL (free documentation license). But unfortunately it's a (religious) cult and a rambly/verbose nonsensical license
+* GNU FDL (free documentation license). But unfortunately it's a cult like and a rambly/verbose nonsensical license
 * hardware documentation. Thanks for all companies documenting (and educating people about) their hardware
