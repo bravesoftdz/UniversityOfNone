@@ -1,8 +1,10 @@
-Welcome to a Computing Science article from The University of None.
+Open Copyright, 2017, Lars Olson. You may modify, extend, or copy this article provided that you note you are not the original author but note you extended it and add your name to the copyright.
+
+Welcome to another Computing Science article from University of None.
 
 In a DLL (or unix DSO), normally if one needs to send data into a result string, you use a buffer and make sure that the caller has allocated memory for a buffer.
 
-This can be obnoxious because you have to make sure the length of the buffer is large enough.
+This can be obnoxious because you have to make sure the length of the buffer is large enough, and do all required pre checks (possibly calling the function twice, once for the check to confirm buffer is big enough, and second call to actuall fill the buffer).
 
 Is an alternative cheat, to make this much easier, to just use a callback?
 
