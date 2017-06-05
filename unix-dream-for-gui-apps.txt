@@ -1,4 +1,8 @@
-This article will be turned into a PDF later. For now just notes:
+Open Copyright, 2017, Lars Olson. You may modify, extend, or copy this article provided that you note you are not the original author but note you extended it and add your name to the copyright.
+
+Welcome to another Computing Science article from University of None.
+
+This article will be turned into a PDF at some point. For now just notes:
 
 A multiple exe/elf/a.out GUI app is possible, that spawns off executables (or just one extra executable spawned off) and then communicates over IPC to send data back to the GUI.
 
