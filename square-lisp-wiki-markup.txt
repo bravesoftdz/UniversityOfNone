@@ -1,6 +1,7 @@
 Open Copyright, 2017, Lars Olson. You may modify, extend, or copy this article provided that you note you are not the original author but note you extended it and add your name to the copyright.
 
-==Article==
+Welcome to another Computing Science article from University of None.
+
 This is a suggestion (that I will also likely implement myself) about a markup for a wiki (does not have to be wiki, could be blog, forum, or other) that offers a quick but extensible markup, similar to a Lisp language but instead uses square brackets.
 
     This is an article with some [b bold text] and also [i itallic text] with 
