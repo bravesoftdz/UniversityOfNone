@@ -1,0 +1,97 @@
+There are 26 letters, A..Z which can be treated as a number system.
+
+Space is represented as an underscore to do calculations involving a zero like "placeholder".
+
+This article is just a brief introduction to the mathematical theory of letters as numbers. I will have to copy my notes from paper to this article.
+
+Example of a simple calculation:  
+ZZZ - YYY = AAA 
+
+More calculations:
+B + A = C
+
+Z + A = A_
+(similar to 9 + 1 = 10, but in the above case, the underscore or space represents a zero like character)
+
+C - B = A
+
+A + A = B
+
+What does Z represent in 10 base? 26
+
+What does Z + Z equal to:
+AY
+(in 10 base: 52)
+
+How to know AY is 52 in your head?
+A is 1, and 26 times two is 52. Since Z is 26, the 52 would be a combination of A, and 26 extra. But we have to account for the space (like a zero). So it is not AZ, but AZ minus one (accounting for _ which is like a zero), which brings AY.
+Similar to how 9 plus 9 is 18, it is not 19. Because 0 exists in the number 10. If we counted from 1-9 without any zero or 10, nine plus nine could very well be 19.
+
+What is D - B ? Answer: B. Similar to 4 - 2 = 2
+
+The most interesting part of "letters are numbers" or "letters as numbers" theory is that all poems, paragraphs, books, text files, essays, are just a single number. 
+All text snippets, even if it is a long novel, can be represented by a single number (insulting to the book author, indeed, that his masterpeice is just a number, but according to math, it is true).
+
+If all text snippets or text works are just numbers, or can be represented as a number, then all text can be compressed into a smaller mathematical equation.
+
+For example a really large number, in the billions, can be represented as a smaller equation. This is actually a form of compression.
+
+A large peice of text, according to Letters as Numbers theory, can be compressed into a single small equation.
+
+This offers all sorts of oppurtunities for encryption and compression algorithms: any single number can be compressed into a smaller math equation.
+
+Therefore any book, paragraph, text file, essay, poem, can be compressed into a single small math equation which represents that book, paragraph, text file, essay, or poem.
+
+Imagine someone writes a masssively long novel, hands it to you, and then immediately you hand him back an equation which represents his novel.
+To a mathematician, this is fascinating. To the book author, it's simply insulting. His work is just a number.
+
+To demonstrate the power of how a large novel can be compressed into a small equation, when "Letters Are Numbers", think of this:
+999 to the power of 999, is a massively large number.  The 999 to power 999 is only 6 characters (6 bytes) long, but represents a huge number.
+A book, novel, paragraph, poem, essay, is exactly the same: the book can be represented by math equation (small as possible) which then uncompresses or decrypts to a larger longer text.
+
+Imagine you have a paragraph of text, that you can "Subtract, multiple, and divide" with other text snippets. There is nothing stopping, for example, someone finding an equation to turn "the" in a paragraph to "a" using math alone, with an input text and a mathematical system that treats the text snippet as a number, part of a number system.
+
+Todo: bring my paper notes on "Letters As Numbers" Theory into this file and create PDF files.
+
+Imagine someone says to you "hello" and you can convert hello to a base 10 number, so you respond back with the base 10 number.
+
+Why is this useful? When we convert a peice of text to a number, we now have the power of math: any math can now be done on a peice of text.
+Literally, someone could divide a paragraph, by the word hello. This might be a poor example, that is useless, as it would bring back a result that doesn't serve any purpose.
+But what if you took a long essay, and divided it or square rooted it, so that now you coudl send it over a slow telephone line 1/8th of its original size, and just send an equation as the key to unlock the compressed data?
+Is this actually what compression algorithms are: math equations around data, but no mathematican or computing scientist has been able to explain or visualize it in such a mathematical way?
+
+If all text snippets are just numbers, then the power of math to manipulate (especially compress and encrypt) these numbers is available to anyone, so long as they understsand that text is just another number system.
+
+Can text as numbers, or letters as numbers, be used to store larger numbers in smaller space? 
+Since there are 26 characters (A..Z) then "ZZ" is a much larger number than 99. Therefore ZZ can represent a much larger number than 99.
+The next number after 99 is 100, a three digit number taking 3 bytes of space, while ZZ is still larger than 100 and takes up only two bytes of space.
+
+Letters can be considered "glpyhs for numbers". Understanding letters as numbers, although difficult at first, gets easier once you think of simple calculations such as 
+YYY + AAA = ZZZ 
+and 
+A + B = C
+  
+Imagine someone asks you to write a 5 paragraph essay, which you do. But when you hand that essay in, you simple give a one line equation which represents that Essay. 
+This is possible with "Letters as Numbers" Theory
+ 
+The results of an equation, is the uncompressed data or the result of the euqation. 
+The equation is the compressed formula and data that makes up the uncompressed data.
+ 
+What is ZZZ to the power of ZZZ? A much larger number than 999 to the power of 999. 
+Therefore, letters as numbers are symbolically more powerful, terse, and store more data in less characters, than the 0-9 number system.
+
+Key areas of research "Letters as Numbers" Theory will make contributions to:
+* Information Theory
+* Computing Science
+* Mathematics (Algebra and many other math areas)
+* New Number Systems
+* Compression Algorithms
+* Encryption Algorthims
+* Data Storage Systems
+* String Bit Theory/String Byte Theory
+* Concatenation Theories
+
+It is possible to take a book or novel, and write an equation to turn it into a new novel. Not an easy task, but possible, with Letters as Numbers Theory.
+
+To a mathemitican, it should make perfect sense that if someone hands you a novel, you should be able to say "this is just a number".
+To all others, it sounds creepy, insulting, or absurd. Thank goodness mathematicians see things differently.
