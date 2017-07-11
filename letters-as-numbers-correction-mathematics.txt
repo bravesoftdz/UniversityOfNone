@@ -1,0 +1,102 @@
+Continuing the Letters as Numbers mathematical theory:
+
+If letters are numbers (which according to the theory they can be represented as such), then all English sentences can be modified with mathematics equations.
+
+For example, consider a sentence which has grammar or spelling errors, or general issues/errors that need correction.
+
+Take the following sentence:
+  "There is an item in the hat"
+
+Say someone needed to correct or improve/modify/change the sentence to:
+  "There is an item at the hat"
+
+The only correction being replace "in" with "at".
+
+Using the Letters are Numbers mathematical theory, once could apply an equation to the sentence to correct it. 
+One way is to subtract the word "in" and then add the word "at" in its place:
+
+             there_is_an_item_in_the_hat
+(minus)    - _________________in________
+(equals:)    there_is_an_item____the_hat
+(plus)     + _________________at________
+(equals:)    there_is_an_item_at_the_hat
+
+The first underscores (like zeros) are not needed, and the above can be shortened to:
+
+             there_is_an_item_in_the_hat
+(minus)    -                  in________
+(plus)     +                  at________
+(equals:)    there_is_an_item_at_the_hat
+
+The above is similar to a number being subtracted and added:
+             932720480160492504609320319
+(minus)     -                 4600000000
+(plus)      +                 1900000000                 
+(equals:)    932720480160492501909320319
+
+Where 
+ T = 9
+ S = 8
+ R = 7
+ N = 6
+ M = 5
+ I = 4
+ H = 3
+ E = 2
+ A = 1
+ _ = 0
+
+The numbers assigned to the letters are just an example, they could have different configurations.
+             
+Where the underscores are like placeholder zeros.
+
+Using Letters as Numbers mathematics theory, one can create a diff file system, if one wants: a text file contains text items that need to be changed, so you send a precise mathmatical equation to operate on the text, instead of sending English instructions (prone to errors and subjective interpretation).
+
+Imagine someone needs an essay corrected, and instead of crossing out text with a red pen and explaining what needs to be corrected using subjective English prose, yellow highlighters, etc., you simply send him a mathametical equation that operates on the text mathematically. You could even send him a base 10 (regular) math numbers and math equation that could be converted to a different mathematics based on letters instead.
+
+A more complex (but still fairly simple) example than the above, is replacing a two letter word with a longer word, where the mathematical equation is not as simple:
+
+Say you have a sentence:
+    "he sees an item"
+And you need to correct or change it to:
+    "he has an item"
+
+Since "sees" is a larger english word than "has". The equation is not a direct swap of exactly the same sized text and the result will be one character shorter.
+
+            he_sees_an_item
+(minus)        sees________
+(equals)    he______an_item
+(plus)          has________
+(equals)    he__has_an_item      (two underscores after there, like 2 zeros, need to trim to one)
+(minus)     he_____________
+(equals)        has_an_item
+(plus)       he____________
+(equals:)    he_has_an_item
+
+Which is similar to a base 10 equation in mathematics:
+             320822801604925
+(minus)     -   822800000000
+(equals)     320000001604925
+(plus)           31800000000
+(equals)     320031801604925
+(minus)      320000000000000
+(equals)         31801604925
+(plus)        32000000000000
+(equals:)     32031801604925
+
+This can be shortened further, however the point is that mathematics can operate on English text, even though previously it was thought that English text and prose had little or nothing to do with mathematics.
+What, for example has a Shakespeare book got to do with mathematics?
+Well, if one was to convert the book to a single number (which is possible) then one could apply mathematics equations to that book, changing it, modifying it, compressing it, encrypting it, and more.
+One could write mathematics equations which describe (shorten) the book into only a few symbols, which then can be "uncompressed" back into its original form.
+In other words, equations can compress the book into a terse equation, similar to taking a large number that is extremely long to write out on paper spanning several pages, and compress it (or represent it) as a small equation such as 99 to the power of 999.
+
+Computing scientists tend to think of compression "algorithms" written with procedures. Mathematicians can think of compression algorithms simply as equations which represent larger numbers.
+All text, according to "Letters As Numbers" theory, can be converted into a number. A book can be converted into a single large number.
+Any large number, can be represented by a shorter equation which adds up to that number, multiples to that number, powers x to y to make that number, etc.
+Therefore, mathematics, literally is the compression and uncompression of numbers; or equations can be compression algorithms for larger numbers; or mathematical equations can uncompress numbers, or uncompress text, if that text is (represents) just a number. 
+All text can be encrypted with mathematical equations alone, if that text is (represents) a number.
+The difference between mathematics and computing science becomes questionable: are equations computing science? In this case, they are; or vice versa: is computing science equations? In this case, it is.
+
+Can one Shakespeare book be multiplied by another Shakespeare book, to get a unreadable (but still meaningful) result? Yes. Since both books can be represented by numbers, a mathematician can literally multiple a Shakespeare book by another book, or take one sentence out of a book and subtract it or multiply it by another Essay.
+This is useful for encryption: imagine you send a book to someone, but it is not readable. The other receiving person asks for the key to unlock the book so he can read it: so you send him a sentence from some other book, and he multiplies the encrypted book by that sentence, and it unlocks the book to now a readable form.
+However, this is just the beginning: There are obviously more practical and sensible use cases for treating Letters as Numbers.
