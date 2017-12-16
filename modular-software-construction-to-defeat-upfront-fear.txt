@@ -1,4 +1,6 @@
-Template for article in progress:
+Open Copyright, 2017, Lars Olson. You may modify, extend, or copy this article provided that you note you are not the original author but note you extended it and add your name to the copyright.
+
+Welcome to another Computing Science article from University of None.
 
 For medium or large software projects (example: a single desktop software application) it can be extremely useful and to develop sections of the software at a time, instead of developing the application itself.
 
